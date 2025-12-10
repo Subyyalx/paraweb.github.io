@@ -1,1 +1,275 @@
-Hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParawebITSolutions - Next-Gen IT, Cloud & Web Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    
+    <style>
+        :root {
+            --primary-color: #007bff; /* Blue for highlights */
+            --dark-color: #212529;
+            --light-bg: #f8f9fa;
+        }
+        /* Header/Navigation */
+        .navbar-brand {
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: var(--primary-color) !important;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: var(--dark-color); /* Dark, sleek background */
+            color: white;
+            padding: 120px 0;
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+        }
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+        }
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            padding: 12px 30px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+        /* Services Section Styling (Modern Card Look) */
+        .service-card {
+            border: none;
+            border-radius: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            overflow: hidden;
+            background-color: white;
+            padding: 25px;
+            height: 100%;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        .card-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        /* Call-to-Action Section */
+        .cta-section {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 60px 0;
+        }
+        .cta-section h2 {
+            font-weight: 700;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: var(--dark-color);
+            color: #ccc;
+        }
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">ParawebITSolutions</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#cloud">Cloud & Azure</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <h1 class="animate__animated animate__fadeInLeft">Future-Proofing Your Business, Today.</h1>
+                        <p class="lead my-4 text-light">We deliver integrated IT, secure Azure cloud solutions, and professional website deployment to drive your digital growth.</p>
+                        <a href="#services" class="btn btn-primary btn-lg me-3">Explore Services</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">Request a Quote</a>
+                    </div>
+                    <div class="col-lg-5 text-center d-none d-lg-block">
+                        <i class="bi bi-cpu-fill text-white" style="font-size: 8rem; opacity: 0.7;"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-2 fw-bold">Comprehensive IT Solutions</h2>
+                <p class="text-center text-muted mb-5">Seamless technology integration for operational excellence.</p>
+                
+                <div class="row g-4">
+                    
+                    <div class="col-md-4">
+                        <div class="service-card shadow-sm">
+                            <i class="bi bi-cloud-arrow-up-fill card-icon"></i>
+                            <h4 class="fw-bold">Cloud & On-Premise Solutions</h4>
+                            <p class="text-muted">Specialized deployment and management of modern infrastructure, focusing on high availability and security. **We are Azure experts.**</p>
+                            <ul class="list-unstyled small">
+                                <li><i class="bi bi-check-circle-fill text-success me-1"></i> Azure Migration & Management</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-1"></i> Server & Network Setup</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-1"></i> Hybrid Cloud Architectures</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="service-card shadow-sm">
+                            <i class="bi bi-life-preserver card-icon"></i>
+                            <h4 class="fw-bold">Managed IT Services & Support</h4>
+                            <p class="text-muted">Proactive monitoring, maintenance, and reliable helpdesk support to keep your business running smoothly, 24/7.</p>
+                            <ul class="list-unstyled small">
+                                <li><i class="bi bi-check-circle-fill text-success me-1"></i> Proactive System Monitoring</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-1"></i> Cybersecurity & Data Backup</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-1"></i> Hardware & Software Maintenance</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="service-card shadow-sm">
+                            <i class="bi bi-globe-americas card-icon"></i>
+                            <h4 class="fw-bold">Website Design & Deployment</h4>
+                            <p class="text-muted">Stunning, performance-driven web design and development, plus expert deployment onto your chosen hosting platform.</p>
+                            <ul class="list-unstyled small">
+                                <li><i class="bi bi-check-circle-fill text-success me-1"></i> Responsive UI/UX Design</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-1"></i> Performance Optimization</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-1"></i> Seamless Deployment (Not Hosting)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cloud" class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <h3 class="display-6 fw-bold text-primary">Microsoft Azure Expertise</h3>
+                        <p class="lead">Unlock the full potential of cloud computing with certified professionals.</p>
+                        <p class="text-muted">We specialize in designing, migrating, and managing secure, scalable solutions within the Azure ecosystem, ensuring cost efficiency and compliance.</p>
+                        <a href="#contact" class="btn btn-outline-dark mt-3">Start Your Cloud Journey</a>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                         <i class="bi bi-microsoft card-icon" style="font-size: 6rem;"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section text-center">
+            <div class="container">
+                <h2 class="mb-3">Ready to Transform Your IT?</h2>
+                <p class="lead mb-4">Let's discuss how customized technology solutions can streamline your operations and accelerate growth.</p>
+                <a href="#contact" class="btn btn-light btn-lg">Contact Our Experts Today</a>
+            </div>
+        </section>
+
+        <section id="contact" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5 fw-bold">Get in Touch</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <form class="p-4 bg-white rounded shadow-lg">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <select class="form-select" id="subject">
+                                    <option>General Inquiry</option>
+                                    <option>Cloud/Azure Services</option>
+                                    <option>Website Project</option>
+                                    <option>Managed IT Support</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 mt-3">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-white">ParawebITSolutions</h5>
+                    <p class="small text-muted">Your dedicated partner for IT infrastructure, secure cloud computing, and digital presence.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-white">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#cloud">Azure & Cloud</a></li>
+                        <li><a href="#contact">Request a Quote</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-white">Connect</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="bi bi-twitter me-2"></i> Twitter</a></li>
+                        <li><a href="#"><i class="bi bi-linkedin me-2"></i> LinkedIn</a></li>
+                        <li><a href="#"><i class="bi bi-envelope me-2"></i> info@paraweb.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="row">
+                <div class="col-12 text-center small text-muted">
+                    &copy; 2025 ParawebITSolutions. All Rights Reserved. | Designed with Modernity.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
